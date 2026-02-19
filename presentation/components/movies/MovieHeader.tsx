@@ -2,11 +2,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import {
-    Image,
-    Pressable,
-    Text,
-    useWindowDimensions,
-    View,
+  Image,
+  Pressable,
+  Text,
+  useWindowDimensions,
+  View,
 } from 'react-native';
 
 interface Props {
@@ -63,8 +63,8 @@ const MovieHeader = ({ poster, originalTtitle, title }: Props) => {
       </View>
 
       <View className="px-5 mt-5">
-        <Text className="font-normal">{originalTtitle}</Text>
-        <Text className="font-semiboold text-2xl">{title}</Text>
+        <Text className="font-sm text-gray-500">{originalTtitle}</Text>
+        <Text className="font-bold text-3xl mt-2">{title}</Text>
       </View>
     </>
   );

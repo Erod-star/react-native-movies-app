@@ -1,3 +1,4 @@
+import MovieCast from '@/presentation/components/movies/MovieCast';
 import MovieDescription from '@/presentation/components/movies/MovieDescription';
 import MovieHeader from '@/presentation/components/movies/MovieHeader';
 import { useMovie } from '@/presentation/hooks/useMovie';
@@ -27,6 +28,7 @@ const MovieScreen = () => {
           title={movie.title}
         />
         <MovieDescription movie={movie} />
+        <MovieCast className="mt-3 pb-5" cast={cast} />
       </ScrollView>
     </SafeAreaView>
   );
